@@ -1,33 +1,22 @@
 # prezto-kubectl
 
-> Inspired from : <https://github.com/prezto-contributions/prezto-kubectl>
+Handy module for kubectl
 
-[Kubectl](https://github.com/kubernetes/kubectl) module for the
-[Prezto](https://github.com/sorin-ionescu/prezto) Zsh configuration framework.
+## Features
 
-## Installation
+* Completion
+* Aliases
+* kube-info (Work in Progress)
 
-1. Set the module directory using `:prezto:load:pmodule-dirs` setting in `~/.zpreztorc`:
+## Setup
 
-    ```shell
-    zstyle ':prezto:load' pmodule-dirs $HOME/.zprezto-contrib
-    ```
-
-2. Clone this repository:
-
-    ```shell
-    git clone https://github.com/vnorguet/prezto-kubectl.git ~/.zprezto-contrib/kubectl
-    ```
-
-3. Add the module to the Prezto modules to load in your `~/.zpreztorc`:
+1. Clone this repository in `contrib` folder `git clone https://github.com/vnorguet/prezto-kubectl.git ${ZDOTDIR:-$HOME}"/.zprezto/contrib/kubectl`
+2. Enable into `~/.zpreztorc`
 
     ```shell
     zstyle ':prezto:load' pmodule \
+      ... \
       kubectl
     ```
 
-## Improvements
-
-1. Add all aliases from: <https://github.com/ahmetb/kubectl-aliases>
-2. Add completions
-3. Add kube-info
+3. Reload your shell
